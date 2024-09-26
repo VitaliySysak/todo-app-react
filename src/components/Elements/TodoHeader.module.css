@@ -1,0 +1,49 @@
+:root {
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sun {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.TodoTitle {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 12px;
+}
+
+@media (max-width: 1400px) {
+  .TodoTitle {
+    font-size: 40px;
+    letter-spacing: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .TodoTitle {
+    font-size: 30px;
+    letter-spacing: 12px;
+  }
+
+  .sun {
+    width: 30px;
+    height: 30px;
+  }
+}

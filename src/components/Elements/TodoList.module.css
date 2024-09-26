@@ -1,0 +1,16 @@
+:root {
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
+}
+
+.listContainer {
+  width: 100%;
+  background-color: var(--very-dark-desaturated-blue);
+  border-radius: 5px;
+  box-shadow: 0px 0px 75px -30px rgba(100, 0, 160, 1);
+}

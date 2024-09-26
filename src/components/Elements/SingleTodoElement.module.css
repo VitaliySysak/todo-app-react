@@ -1,0 +1,91 @@
+:root {
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
+}
+
+.todoElement {
+  width: 100%;
+  min-height: 79px;
+  background-color: var(--very-dark-desaturated-blue);
+  border-bottom: 1px solid var(--very-dark-grayish-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.taskTitle {
+  font-size: 25px;
+  color: var(--light-grayish-blue);
+  font-weight: 200;
+  width: 78%;
+}
+
+.deleteIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: var(--dark-grayish-blue);
+  margin-right: 10px;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.checkOn {
+    background-image: url('../../images/icon-check.svg');
+    background-repeat: no-repeat; 
+    background-position: 4px 7px;
+    background-size:22px;
+}
+
+.completedTodo {
+    text-decoration: line-through;
+    color: var(--very-dark-grayish-blue);
+}
+
+@media (max-width: 1400px) {
+  .todoElement {
+    width: 100%;
+    min-height: 59px;
+  }
+
+  .taskTitle {
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .deleteIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .todoElement {
+    width: 100%;
+    min-height: 39px;
+  }
+
+  .taskTitle {
+    font-size: 10px;
+    font-weight: 200;
+  }
+
+  .deleteIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
